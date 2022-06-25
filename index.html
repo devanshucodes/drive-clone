@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudBOX</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.30/angular-ui-router.js" integrity="sha512-5J08Lq3B2EfuPrNSYckUPHKYHaUhCQ4MdeObdcR0YZnr8eapZ7XMA2ejUyQYpWN+fwO48wuxsL5KDZYIVVVxvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome -->
+
+</head>
+
+<body ng-app="myapp" style="overflow-x: hidden;">
+  
+
+    
+  <div ui-view> 
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://templates.iqonic.design/cloudbox/html/assets/images/logo.png"
+            alt="" srcset="" width="150px" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#heading">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#text1">Security</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#text3">Collabs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#text5">Download</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+
+            
+            <a class="btn" id="btn1" ui-sref="first">Go to Drive </a>
+            <a class="btn" id="btn2" ui-sref="five"> Admin Portal </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  
+<div> 
+  <div class="box">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <center>
+    <div id="heading">
+
+      <img src="Images/logo.jpeg" alt="" srcset="" width="150px" height="150px">
+      <strong>
+        <p id="head"> CloudBOX</p>
+      </strong>
+
+      <h3> Your content is safe, private</h3>
+      <h3> and never used for ad personalization</h3>
+      <br>
+      <a class="btn" id="btn2" ui-sref="two"> Register </a>
+    </div>
+  </center>
+
+  <div id="text1" data-aos="fade-up" data-aos-duration="3000">
+    <h1> Easy and secure </h1>
+    <h1> access to all of </h1>
+    <h1>your content </h1>
+    <p> Store, share, and collaborate on files and folders from <br> any mobile device, tablet, or computer</p>
+    <form class="d-flex" role="search">
+      <button class="btn" id="btn1" type="submit">Go to Drive </button>
+      <button class="btn" id="btn2" type="submit"> Admin Portal </button>
+    </form>
+  </div>
+  <div id="pic1" data-aos="fade-up" data-aos-duration="3000">
+    <img
+      src="https://lh3.googleusercontent.com/vq6ZjR72IcEKRh3QtkVrf2BXsZIOgljo8yGevO2rSVtl3mSxSDKvWfFAGxMxCYbPLGiovGk-gk0kA2csKSPHQKog-zTmNjRtmh6VkA=s0"
+      alt="" srcset="" width="800px" height="600px">
+  </div>
+  <div id="text2" data-aos="fade-left" data-aos-duration="3000">
+    <img
+      src="https://kstatic.googleusercontent.com/files/eea9db083417eec76592d1aebc1ad4d545d9539a2fd3b4c5f2ae88bc2286583596ac5e714def676d8026e17177f5974c2095ca3d815446e64ac5609e906f3e5e"
+      alt="" srcset="">
+    <h1> Your content is safe, private, </h1>
+    <h1> and never used for ad </h1>
+    <h1> personalization </h1>
+    <p>Drive provides encrypted and secure access to your files. Files <br> shared with you are proactively scanned and
+      removed when <br> malware, spam, ransomware, or phishing is detected. And Drive is <br> cloud-native, which
+      eliminates the need for local files and <br> minimizes risk to your devices.</p>
+
+  </div>
+  <div id="pic2" data-aos="fade-right" data-aos-duration="3000">
+    <center> <img
+        src="https://lh3.googleusercontent.com/O7uh86FkoKSeAr1S-e48DidDrRvUJDO9pY-c7e9r-Nm555C4iACq8DoVgj73MpMGOSzKEE7PRXI-VJYMIrNXbYySFNvHzOIPChFCaOPRP37BwzdFCQ=s0"
+        alt="" srcset="" width="500px" height="500px"></center>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <div id="text3" data-aos="fade-left" data-aos-duration="3000">
+    <img
+      src="https://kstatic.googleusercontent.com/files/8317f83271acdf124799a6f1888da1313d29696309f46e1876ad3216e5ae3d5cb9049b45b58cc1f201f1293badbf9046a664652e019b5574a7e8979964bff928"
+      alt="" srcset="">
+    <h1> Cloud-native collaboration </h1>
+    <h1> apps to supercharge</h1>
+    <h1> teamwork </h1>
+    <p> Drive integrates seamlessly with Docs, Sheets, and Slides, cloud- <br> native apps that enable your team to
+      collaborate effectively in real <br> time. Create and share content with your team on Day 1, with no<br> need to
+      migrate from existing tools.</p>
+
+  </div>
+  <div id="pic3" data-aos="fade-left" data-aos-duration="3000">
+    <img
+      src="https://lh3.googleusercontent.com/KOWQOT_D7NGb3AlhaXBiU3nGYJ6QwKvVhKsdm6UwiIOS15T4bgx7zynlbanpvU61kFBYBV21-v_PSAG4K3do1zw69lpIT2LiISiH=s0"
+      alt="" srcset="" width="800px" height="600px">
+  </div>
+
+  <div id="text4" data-aos="fade-right" data-aos-duration="3000">
+    <img
+      src="https://kstatic.googleusercontent.com/files/1215f100aed56568e58a202bef5caf51ebcc316ed033a7d042d6d6c1f90f56c39e5633d0fcb521d98e3d40022e901c535be27f73510c7d95e0bf39c861bd46ff"
+      alt="" srcset="">
+    <h1> Our AI and Search </h1>
+    <h1>technology helps your team </h1>
+    <h1> move faster </h1>
+    <p>Google’s powerful search capabilities are embedded in Drive and <br> offer unmatched speed, performance, and
+      reliability. And features <br> like Priority use AI to predict what you’re looking for and surface <br> the most
+      relevant content—helping your team find files up to 50% <br> faster.</p>
+
+  </div>
+  <div id="pic4" data-aos="fade-right" data-aos-duration="3000">
+    <center> <img
+        src="https://lh3.googleusercontent.com/TIze8VGPsxhAWglK1i4ROYTGK426IFRtLQ43uzkMRYUlEZsHQKhYfXQWjVOKUFGKN1l2Cboam1lM4uo4e6kpyTsaunMM00hB5y0Pn7A=s0"
+        alt="" srcset="" width="700px" height="600px"></center>
+  </div>
+
+  <div id="text5" data-aos="zoom-in" data-aos-duration="3000">
+
+    <center>
+      <h1> Experience Drive on any device </h1>
+    </center>
+
+    <center>
+      <p>Drive works on all major platforms, enabling you to work seamlessly across your <br> browser, mobile device,
+        tablet, and computer.</p>
+    </center>
+
+    <center> <img
+        src="https://kstatic.googleusercontent.com/files/540ac1df440f3a3708b6f31b7fa0c4fd7fd4471dc0614cab5482e110dee791fd6492b009e67d1bbc3467bd6ac63785f5120cb8070ab95de32830c63975290455"
+        alt="" srcset=""> <img
+        src="https://kstatic.googleusercontent.com/files/6e1905e140550741a844d866fa3fd7c11f4a9d6cb84081b66fe973ee7c0afd03e548ccf9cdf7d671c9d3f301e593b53bc2050a06d900daf13acb0b267d88e691"
+        alt="" srcset=""></center>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+    <footer id="foot">
+
+      <hr>
+      <!-- <img src="https://templates.iqonic.design/cloudbox/html/assets/images/logo.png" alt="" id="img9" srcset="" width="150px" height="60px"> -->
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img
+              src="https://templates.iqonic.design/cloudbox/html/assets/images/logo.png" alt="" srcset="" width="150px"
+              height="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Privacy </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Cloud products</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+
+              <li class="nav-item">
+                <a class="nav-link " href="#"> <i style="font-size:24px" class="fa">&#xf059;</i> Help</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Hindi </a></li>
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+              </li>
+
+
+            </form>
+
+          </div>
+        </div>
+      </nav>
+    </footer>
+  </div>
+</div>
+</div>
+<script src="index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

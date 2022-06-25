@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<style>
+   body{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 52rem;
+      z-index: -1;
+      opacity: 0.8;
+   }
+
+    .nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: black;
+    background-color: rgb(245, 239, 239);
+}
+
+#btn1 {
+    border: rgb(224, 224, 224) 2px solid;
+    margin-right: 5px;
+    color: #1a73e8;
+}
+
+#btn2 {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#btn2:hover {
+    background-color: #1561c3;
+}
+
+#btn1:hover {
+    border: #1a73e8 2px solid;
+    background-color: #eaf3ff;
+}
+    #heading {
+        font-size: 40px;
+    }
+
+    #img {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    #img2 {
+        float: left;
+        width: 500px;
+        margin-left: 80px;
+    }
+
+    #box {
+        margin-top: 60px;
+        float: right;
+        width: 500px;
+        height: 450px;
+        margin-right: 100px;
+        border-radius: 10px;
+        background-color: #cfcdfd;
+        margin-right: 100px;
+    }
+
+    #login {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 70px;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #floatingInput {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #floatingPassword {
+        width: 400px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #tick {
+        width: 400px;
+        margin-bottom: 40px;
+        margin-left: 100px;
+    }
+
+    .form-check {
+        padding-right: 100px;
+    }
+    .nav-item:hover{
+    background-color: green;
+    }
+    #btn{
+        margin-top:30px;
+    }
+    
+</style>
+
+<body ng-app="myapp">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand">CloudBOX &reg; </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" class="nav"
+                                    ui-sref="three">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" class="nav" ui-sref="first"> Login </a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link active" class="nav" ui-sref="two"> Register </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#accordionExample">About </a></li>
+                                    <li><a class="dropdown-item" href="#">Security</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </nav>
+    <center>
+        <h1 id="login"> LOGIN PAGE </h1>
+    </center>
+    <!-- <center> <h1 id="heading"> Login Page </h1> </center> -->
+
+    <div id="img2">
+        <img src="https://ssl.gstatic.com/accounts/signup/glif/account.svg"
+            alt="" srcset="" width="550px" height="570px">
+    </div>
+    <div id="box" ng-controller="login">
+
+        <center> <img src="https://templates.iqonic.design/cloudbox/html/assets/images/logo.png" alt="" srcset=""
+                id="img" width="300px" height="100px"></center>
+        <form>
+            <center> <input type="text" class="form-control" id="floatingInput" ng-model="user" placeholder=" Username or Email id"
+                    required></center>
+
+
+
+            <center> <input type="password" class="form-control" id="floatingPassword" ng-model="password"
+                    placeholder="Password" required></center>
+
+
+
+            
+            <center><button type="submit" class="btn btn-primary" id="btn" ng-click="func()"> Log In </button></center>
+
+        </form>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    
+
+</body>
+
+</html>
